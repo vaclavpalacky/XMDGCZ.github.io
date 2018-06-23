@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="13px" viewBox="0 0 16 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>more</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="––-Desktop-:-1920px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-442.000000, -931.000000)" fill-rule="nonzero" fill="#F33A21">
+            <g id="CONTENT" transform="translate(-320.000000, 0.000000)">
+                <g id="xamarin" transform="translate(635.000000, 480.000000)">
+                    <g id="more" transform="translate(0.000000, 443.000000)">
+                        <g transform="translate(127.000000, 8.000000)" id="Shape">
+                            <path d="M9.35015749,13 C9.26056197,13 9.17096645,12.9664724 9.10236988,12.9001013 C8.96587671,12.766675 8.96587671,12.5497717 9.10236988,12.4163454 L15.1549673,6.49974341 L9.10306985,0.583825677 C8.96657667,0.450399358 8.96657667,0.233496059 9.10306985,0.10006974 C9.23956302,-0.0333565799 9.46145193,-0.0333565799 9.5979451,0.10006974 L15.8976301,6.25820756 C16.0341233,6.39163388 16.0341233,6.60853718 15.8976301,6.7419635 L9.5979451,12.9001013 C9.52934853,12.9664724 9.43975301,13 9.35015749,13 Z"></path>
+                            <path d="M15.6666667,7 L0.333333333,7 C0.149333333,7 0,6.776 0,6.5 C0,6.224 0.149333333,6 0.333333333,6 L15.6666667,6 C15.8506667,6 16,6.224 16,6.5 C16,6.776 15.8506667,7 15.6666667,7 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
