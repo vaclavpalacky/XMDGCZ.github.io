@@ -1,16 +1,17 @@
-<nav class="light-blue lighten-1" role="navigation">
+<nav role="navigation">
     <div class="nav-wrapper container">
-        <a id="logo-container" class="brand-logo" href="{{ "/" | relative_url }}">Logo</a>
-    {% assign default_paths = site.pages | map: "path" %}
+        <a href="/" class="header-logo"><img src="/assets/images/logo-header.svg" alt="" height="50">Xamarin Developers Group Czech</a>
+
+        {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
 
           <ul class="right hide-on-med-and-down">
-            <li><a href="{{ "/" | relative_url }}">Home </a></li>
+            <li><a class="active" href="{{ "/" | relative_url }}">Home </a></li>
             {% if page_paths %}
                 {% for path in page_paths %}
                     {% assign my_page = site.pages | where: "path", path | first %}
                     {% if my_page.title %}
-                    <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+                    <li><a href="{{ my_page.url | relative_url }}" class="{% if page.url contains /my_page.url/ %} active {% endif %}">{{ my_page.title | escape }}</a></li>
                     {% endif %}
                 {% endfor %}
             {% endif %}              

@@ -3,9 +3,13 @@ $lightBlue: #B9D9F3
 $almostBlack: #0C2131
 $gray: #727C84
 $red: #f33a21
+$menu-height: 72px
 
 $OpenSans: 'Open Sans', sans-serif
 
+strong, b
+  font-weight: 700
+  color: #000000
 
 ::selection
   background: $blue
@@ -60,7 +64,7 @@ h1.page-header-text
   background-color: darken($blue, 10)
 
 .bg-img-primary
-  background-image: url(../assets/images/visual-primary-bg.png)
+  background-image: url(../assets/images/XMDGWeb-headImage.png)
   background-repeat: no-repeat
   background-size: cover
   background-position: center
@@ -82,7 +86,7 @@ body
 
 h1, h2, h3, h4
   font-family: $OpenSans
-  font-weight: 300
+  font-weight: 300 !important
 
 p
   line-height: 1.5em
@@ -140,9 +144,15 @@ a
   color: $blue
 
 /* menu */
-header
-  height: 64px
+nav
+  height: $menu-height
   background: $blue
+
+  ul a
+    color: white
+    display: inline-block
+    padding: 18px 25px 10px 25px
+    font-size: 17px
 
   .header-logo
     color: white
@@ -150,17 +160,14 @@ header
     padding: 0
     line-height: 60px
 
+
     img
       width: 45px
       height: 45px
       margin-right: 15px
+      vertical-align: middle
 
-  nav a
-    color: $lightBlue
-    display: inline-block
-    padding: 18px 25px
-
-header a.active, header nav a:focus, header nav a:active
+nav ul a.active, nav ul a:focus, nav ul a:active, nav ul a:hover
   color: white
   text-decoration: none
   border-bottom: 4px solid #B9D9F3
@@ -176,10 +183,9 @@ header a:hover
 
 .section
   padding-top: 4em
-  padding-bottom: 0
 
   &.first-section
-    margin-top: -64px
+    margin-top: - $menu-height
     padding-bottom: 2em
 
   h2
