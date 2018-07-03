@@ -2,6 +2,7 @@
   <span>
     <i class="far fa-calendar-alt"></i>
     <time datetime="{{ include.post_date | date_to_xmlschema }}" itemprop="datePublished">
+      {{ include.post_date | date: " %-d. "}}
       {% assign m = include.post_date | date: "%-m" %}
       {% case m %}
         {% when '1' %}{{ site.t[include.post_lang].months.january }}
@@ -17,7 +18,7 @@
         {% when '11' %}{{ site.t[include.post_lang].months.november }}
         {% when '12' %}{{ site.t[include.post_lang].months.december }}
       {% endcase %}
-      {{ include.post_date | date: " %-d, %Y" }}
+      {{ include.post_date | date: "%Y" }}
     </time>
   </span>
 

@@ -23,3 +23,40 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
+
+t:
+  en:
+    months:
+      january: "Jan"
+      february: "Feb"
+      march: "Mar"
+      april: "Apr"
+      may: "May"
+      june: "Jun"
+      july: "Jul"
+      august: "Aug"
+      september: "Sep"
+      october: "Oct"
+      november: "Nov"
+      december : "Dec"
+  cz:
+    months:
+      january: "ledna"
+      february: "února"
+      march: "března"
+      april: "dubna"
+      may: "května"
+      june: "června"
+      july: "července"
+      august: "srpna"
+      september: "září"
+      october: "října"
+      november: "listopadu"
+      december : "prosince"
+
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      lang: "cz"

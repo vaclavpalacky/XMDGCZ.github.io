@@ -17,7 +17,7 @@
           {% include post-meta-info.html post_date=post.date post_url=post.url post_lang=post.lang %}
         </div>
 
-        <span class="post-excerpt">{{ post.excerpt | default: post.tagline | markdownify | truncatewords: 140 }}</span>
+        <span class="post-excerpt">{{ post.excerpt | default: post.tagline | markdownify | strip_html | truncatewords: 70 }}</span>
 
         {%if post.tags.size > 0 %}
         <div class="post-meta-list post-tag-list">
