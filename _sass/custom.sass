@@ -7,6 +7,11 @@ $menu-height: 72px
 
 $OpenSans: 'Open Sans', sans-serif
 
+.post
+  .post-header
+    margin: 0 0 30px 0
+
+
 .post-excerpt p
   margin: 30px 0 5px 0
 
@@ -36,6 +41,7 @@ strong, b
 .post-header
   h1
     padding: 0px
+    margin: 0 0 0 0
 
 ::selection
   background: $blue
@@ -542,16 +548,24 @@ h3
 .intermezzo-smaller
   margin: 1em 0 3em
 
-pre
-  font-size: 1em
-  background-color: #fdf6e3
-  padding-bottom: 1em
-  padding-left: 1em
-  overflow: auto
-  word-wrap: normal
-  white-space: pre
-  border-radius: 6px
-  padding-top: .3em
+.highlighter-rouge
+  padding: 10px
+
+.highlight
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+  pre
+      font-size: 13px
+      font-family: "Open Sans", sans-serif
+      padding-bottom: 1em
+      padding-left: 1em
+      overflow: auto
+      word-wrap: normal
+      white-space: pre
+      border-radius: 6px
+  td, th
+    padding: 0 10px 0 10px
+    pre
+      padding: 0px
 
 pre[class*="language-"]
   margin: 1em 0

@@ -2,15 +2,11 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {% include head.html %}
-
+  {% include script.html %}
   <body>
 
     {% include header.html %}
-
-
-        {{ content }}
-          
-    {% include script.html %}
+      {{ content }}
 
   </body>
 
