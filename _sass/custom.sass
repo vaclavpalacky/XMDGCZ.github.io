@@ -548,27 +548,30 @@ h3
 .intermezzo-smaller
   margin: 1em 0 3em
 
-.highlighter-rouge
-  padding: 10px
 
-.highlight
+div .highlight
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
   pre
-      font-size: 13px
-      font-family: "Open Sans", sans-serif
-      padding-bottom: 1em
-      padding-left: 1em
-      overflow: auto
-      word-wrap: normal
-      white-space: pre
-      border-radius: 6px
-  td, th
-    padding: 0 10px 0 10px
-    pre
-      padding: 0px
+    font-size: 13px
+    line-height: normal
+    font-family: "Open Sans", sans-serif
 
-pre[class*="language-"]
-  margin: 1em 0
+.rouge-gutter
+  width: 15px
+  
+.rouge-code
+  padding-left: 10px
+
+pre.highlight
+  overflow-x: scroll
+  .rouge-table
+    overflow-x: hidden
+
+.lineno
+  padding: 0 10px 0 10px
+  text-align: center
+  border-radius: 6px
+  border-right: 2px solid $blue
 
 .success, .success a
   color: #8FBE00
