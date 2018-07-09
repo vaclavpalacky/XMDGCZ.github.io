@@ -7,6 +7,20 @@ $menu-height: 72px
 
 $OpenSans: 'Open Sans', sans-serif
 
+.container
+  max-width: 1024px
+  width: 90%
+
+@media only screen and (min-width: 601px)
+.container
+  width: 90%
+
+
+@media only screen and (min-width: 993px)
+.container
+  width: 80%
+
+
 .post
   .post-header
     margin: 0 0 30px 0
@@ -83,10 +97,8 @@ h1.page-header-text
   background-color: darken($blue, 10)
 
 .bg-img-primary
-  background-image: url(../assets/images/XMDGWeb-headImage.png)
-  background-repeat: no-repeat
   background-size: cover
-  background-position: center
+  background: url(../assets/images/XMDGWeb-headImage.png) no-repeat center
 
 .bg-color-secondary
   background-color: $red
@@ -548,27 +560,34 @@ h3
 .intermezzo-smaller
   margin: 1em 0 3em
 
+.highlighter-rouge
+  max-width: 95%
+  padding: 5px
+  margin: auto
 
 div .highlight
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.3)
   pre
-    font-size: 13px
-    line-height: normal
+    font-size: 0.9em
+    line-height: 1.7
     font-family: "Open Sans", sans-serif
+  td, th
+    padding: 5px
+  .rouge-code
+      padding-left: 10px
 
 .rouge-gutter
   width: 15px
   
-.rouge-code
-  padding-left: 10px
+
 
 pre.highlight
-  overflow-x: scroll
-  .rouge-table
-    overflow-x: hidden
+  overflow-x: auto
+
 
 .lineno
   padding: 0 10px 0 10px
+  margin: 0
   text-align: center
   border-radius: 6px
   border-right: 2px solid $blue
