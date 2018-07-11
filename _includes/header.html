@@ -1,9 +1,29 @@
 <nav role="navigation">
     <div class="nav-wrapper container">
-        <a href="/" class="header-logo"><img src="/assets/images/logo-header.png" alt="" height="50">Xamarin Developers Group Czech</a>
-
         {% assign default_paths = site.pages | map: "path" %}
-    {% assign page_paths = site.header_pages | default: default_paths %}
+        {% assign page_paths = site.header_pages | default: default_paths %}
+
+        <ul id="nav-mobile" class="side-nav">
+            <li><a  {% if page.url == "/" %} class="active" {% endif %} href="{{ "/" | relative_url }}">Domů</a></li>
+            {% if page_paths %}
+            {% for path in page_paths %}
+            {% assign my_page = site.pages | where: "path", path | first %}
+            {% if my_page.title %}
+            <li><a href="{{ my_page.url | relative_url  | replace : '.html', ''}}" class="{% if page.url contains /my_page.url/ %} active {% endif %}">{{ my_page.title | escape }}</a></li>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse menu-button">
+            <i class="material-icons">menu</i>
+        </a>
+
+        <a href="/" class="header-logo hide-on-med-and-down">
+            <img src="/assets/images/logo-header.png" class="" alt="" height="50"/>
+            <span>
+                Xamarin Developers Group Czech
+            </span>
+        </a>
 
           <ul class="right hide-on-med-and-down">
                 <li><a  {% if page.url == "/" %} class="active" {% endif %} href="{{ "/" | relative_url }}">Domů</a></li>
@@ -17,18 +37,5 @@
             {% endif %}              
           </ul>
 
-          <ul id="nav-mobile" class="side-nav">
-              <li><a  {% if page.url == "/" %} class="active" {% endif %} href="{{ "/" | relative_url }}">Domů</a></li>
-                {% if page_paths %}
-                {% for path in page_paths %}
-                    {% assign my_page = site.pages | where: "path", path | first %}
-                    {% if my_page.title %}
-                    <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-                    {% endif %}
-                {% endfor %}
-            {% endif %} 
-          </ul>        
-
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
 </nav>
