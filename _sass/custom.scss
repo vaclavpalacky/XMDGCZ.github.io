@@ -1,3 +1,4 @@
+
 .container {
   max-width: 1024px;
   width: 90%;
@@ -22,7 +23,7 @@
   }
 }
 
-.navigation a:hover, i {
+.navigation a:hover i{
   color: white;
 }
 
@@ -99,7 +100,7 @@
 
 .post-meta-list {
   margin: 15px 0;
-
+  color: grey;
   i {
     padding-left: 5px;
     padding-right: 5px;
