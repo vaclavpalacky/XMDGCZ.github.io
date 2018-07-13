@@ -5,11 +5,14 @@
 
         <ul id="nav-mobile" class="side-nav">
             <li><a  {% if page.url == "/" %} class="active" {% endif %} href="{{ "/" | relative_url }}">Domů</a></li>
+            {% assign my_page = null %}
             {% if page_paths %}
                 {% for path in page_paths %}
                     {% assign my_page = site.pages | where: "path", path | first %}
                     {% if my_page.title %}
-                        <li><a href="{{ my_page.url | relative_url  | replace : '.html', ''}}" class="{% if page.url contains /my_page.url/ %} active {% endif %}">{{ my_page.title | escape }}</a></li>
+                        <li><a href="{{ my_page.url | relative_url  | replace : '.html', ''}}" class="{% if page.url contains /my_page.url/ %} active {% endif %}">
+                            {{ my_page.title | escape }}
+                        </a></li>
                     {% endif %}
                 {% endfor %}
             {% endif %}
@@ -17,27 +20,11 @@
         <a href="#" data-activates="nav-mobile" class="button-collapse menu-button">
             <i class="material-icons">menu</i>
             <div class="menu-title">
-                {% if page.url == "/" %} XMDGCZ {% endif %}
-                {% assign title_found = false %}
-
-                {% if page_paths %}
-                    {% for path in page_paths %}
-                        {% assign my_page = site.pages | where: "path", path | first %}
-                        {% if my_page.title %}
-                            {% if page.url contains /my_page.url/ %}
-                                {% assign title_found = true %}
-                                {{ my_page.title | escape }}
-                            {% endif %}
-                        {% endif %}
-                    {% endfor %}
-                {% endif %}
-
-                {% if title_found == false %}
-                    {% assign post = site.posts | where: "path", path | first %}
-                    {{ post.title | escape }}
+                {% if page.url == "/" or page.title == "" %}
+                    XMDGCZ
+                {% else %}
                     {{page.title}}
                 {% endif %}
-
             </div>
         </a>
 
