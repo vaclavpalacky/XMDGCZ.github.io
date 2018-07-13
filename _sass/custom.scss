@@ -25,6 +25,7 @@
 
 .navigation a:hover i{
   color: white;
+
 }
 
 .menu-button {
@@ -33,14 +34,15 @@
 }
 
 .menu-button:hover {
+  color: white;
   text-decoration: none;
 }
 
-.menu-button::after {
-  content: "XMDGCZ";
-  font-family: $OpenSans;
-  color: white;
+.menu-title {
   padding-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .container {
@@ -329,6 +331,7 @@ nav {
 
   .menu-button {
     margin: 0;
+    max-width: 100%;
   }
 
   .menu-button i {
