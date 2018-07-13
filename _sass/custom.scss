@@ -15,6 +15,11 @@
 
 .header-logo {
   vertical-align: center;
+  &:hover
+  {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .navigation a:hover, i {
