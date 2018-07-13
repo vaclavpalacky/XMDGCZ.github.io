@@ -19,6 +19,7 @@
 
 .menu-button {
   display: flex;
+  font-size: 1em;
 }
 
 .menu-button:hover {
@@ -267,11 +268,13 @@ nav {
   background: $blue;
 
   .nav-wrapper {
-    padding-top: 3px;
-    height: $menu-height;
     line-height: $menu-height;
+    .nav-large
+    {
+      height: calc(#{$menu-height} - 10px);
+      line-height: calc(#{$menu-height} - 10px);
+    }
 }
-
   ul a {
     color: white;
     display: inline-block;
@@ -280,11 +283,7 @@ nav {
 }
 
   .header-logo {
-    color: white;
-    display: inline-block;
-    padding: 0;
-    line-height: 60px;
-
+    line-height: calc(#{$menu-height} - 10px);
     img {
       width: 45px;
       height: 45px;
@@ -420,6 +419,7 @@ footer {
     max-width: 300px;
     height: 200px;
     white-space: nowrap;
+    color: transparent;
 
     &:before {
       content: "";
@@ -514,6 +514,12 @@ h2 {
   font-size: 1em;
   line-height: 1.8em;
 
+  p {
+    @media #{$medium-and-down} {
+      font-size: 0.75em;
+    }
+  }
+
   > div:not(:last-child) {
     margin-bottom: 25px;
 }
@@ -526,7 +532,6 @@ h2 {
       vertical-align: inherit;
   }
 }
-
   .img-wrapper {
     width: 32px;
     margin-right: 10px;
