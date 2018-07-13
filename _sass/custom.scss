@@ -42,9 +42,6 @@
   padding-left: 10px;
 }
 
-@media only screen and (min-width: 993px) {
-}
-
 .container {
   width: 80%;
 }
@@ -52,6 +49,20 @@
 .post {
   .post-header {
     margin: 0 0 30px 0;
+  }
+}
+
+.post-link
+{
+  color: $font-color;
+  &:hover
+  {
+    color: $font-color;
+    text-decoration: none;
+  }
+  h2
+  {
+    color: $blue;
   }
 }
 
@@ -63,6 +74,10 @@
   h2 {
     margin-top: 1.5em;
     margin-bottom: 0.2em;
+    @media #{$medium-and-down} {
+      font-size: 1.3em;
+      font-weight: bold;
+    }
   }
 }
 
@@ -75,8 +90,9 @@
   }
   span {
     border-bottom: 3px solid #cae2f6;
-    @media #{$medium-and-down} {
-      line-height: 1.5em;
+      @media #{$medium-and-down} {
+        line-height: 1.5em;
+        font-size: .8em;
     }
   }
 }
@@ -192,10 +208,20 @@ h1, h2, h3, h4 {
 p {
   line-height: 1.5em;
   margin: 15px 0;
-
   @extend .flow-text;
 }
 
+.post-excerpt
+{
+  @media #{$medium-and-down} {
+    display: block;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 4.5em;
+    line-height: 1.5em;
+  }
+}
 ul, ol {
   padding-left: 1.1em;
 }
