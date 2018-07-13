@@ -2,8 +2,11 @@
   max-width: 1024px;
   width: 90%;
 }
-
-@media only screen and (min-width: 601px) {
+.home-header
+{
+  @media #{$medium-and-down} {
+    padding-top: 52px;
+  }
 }
 
 .container {
@@ -113,11 +116,6 @@ strong, b {
   }
 }
 
-.article-title {
-  padding-bottom: 9px;
-  padding-top: 9px;
-  color: white;
-}
 
 .page-header-text {
   color: white;
@@ -134,8 +132,7 @@ strong, b {
 
 h1.page-header-text {
   font-size: 3.5em;
-
-  @media only screen and (max-width: 767px) {
+  @media #{$medium-and-down} {
     font-size: 2em;
     margin-top: 0;
     display: table-row;
