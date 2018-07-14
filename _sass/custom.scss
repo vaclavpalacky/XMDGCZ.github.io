@@ -312,6 +312,11 @@ nav {
 
   .nav-wrapper {
     line-height: $menu-height;
+    a:hover a:focus a:active
+    {
+      color: white;
+      text-decoration: none;
+    }
     .nav-large {
       height: calc(#{$menu-height} - 10px);
       line-height: calc(#{$menu-height} - 10px);
