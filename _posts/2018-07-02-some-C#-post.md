@@ -6,7 +6,7 @@ Podnikatelské vysokým smeten produkují? Kavárna bezvadně potřebují hází
 
 
 ## C# kód
-
+Nějaký text před kódem.
 ```csharp
 [XamlCompilation(XamlCompilationOptions.Compile)]
 public partial class TasksPage : ContentPage
