@@ -1,17 +1,13 @@
 
 .container {
   max-width: 1024px;
-  width: 90%;
+  width: 80%;
 }
 .home-header
 {
   @media #{$medium-and-down} {
     padding-top: 52px;
   }
-}
-
-.container {
-  width: 90%;
 }
 
 .header-logo {
@@ -45,9 +41,6 @@
   white-space: nowrap;
 }
 
-.container {
-  width: 80%;
-}
 
 .post {
   .post-header {
@@ -315,6 +308,9 @@ nav {
     .nav-large {
       height: calc(#{$menu-height} - 10px);
       line-height: calc(#{$menu-height} - 10px);
+    }
+    @media #{$small-and-down} {
+      width: 95%;
     }
   }
   ul a {
@@ -792,7 +788,7 @@ h3 {
 
 .highlighter-rouge {
   padding: 10px 0;
-  @media #{$medium-and-down} {
+  @media #{$small-and-down} {
     margin: 0 -12.5%;
   }
 }
