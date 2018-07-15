@@ -5,10 +5,10 @@
 <ul class="post-list">
     {% for post in site.posts limit:max_posts %}
       <li>
-        {% if site.show_post_image_posts_list %}
-          <div style="height:100px;width=100%;margin-bottom:13px;background:url('{{post.header.image | prepend: site.baseurl }}') center center repeat;">
-          </div>
-        {% endif %}
+          {% comment %}
+            {% if site.show_post_image_posts_list %}
+            {% endif %}
+          {% endcomment %}
         <a class="blog-post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
             <h2>
                 {{ post.title }}
@@ -21,13 +21,13 @@
             <p class="post-excerpt">{{ post.excerpt | default: post.tagline | markdownify | strip_html | truncatewords: 70 }}</p>
             {% comment %}
 
-            {%if post.tags.size > 0 %}
-            <div class="blog-post-meta-list post-tag-list">
-            {% for tag in post.tags %}
-              <code>{{ tag | escape }}</code>&nbsp;
-            {% endfor %}
-            </div>
-            {%endif %}
+                {%if post.tags.size > 0 %}
+                <div class="blog-post-meta-list post-tag-list">
+                {% for tag in post.tags %}
+                  <code>{{ tag | escape }}</code>&nbsp;
+                {% endfor %}
+                </div>
+                {%endif %}
 
             {% endcomment %}
         </a>

@@ -120,7 +120,7 @@ strong, b {
 
 .post-header {
   h1 {
-    padding: 0px;
+    padding: 0;
     margin: 0 0 0 0;
   }
 }
@@ -153,13 +153,6 @@ strong, b {
   color: white;
   padding: 15px 0;
   font-size: 1.4em;
-
-  @media only screen and (max-width: 767px) {
-    font-size: 1em {
-      padding: 7px 0;
-    }
-  ;
-  }
 }
 
 h1.page-header-text {
@@ -269,8 +262,8 @@ ul.manual-list, ol.manual-list {
   margin-left: -0.8em;
   -webkit-margin-before: 1.1em;
   -webkit-margin-after: 1.1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
   -webkit-padding-start: 22px;
 
   li {
@@ -373,7 +366,7 @@ header a:hover {
 
   &.first-section {
     margin-top: -$menu-height;
-    padding-bottom: 0em;
+    padding-bottom: 0;
   }
 
   @media #{$medium-and-down} {
@@ -806,7 +799,7 @@ h3 {
 }
 
 div .highlight {
-  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
 
   pre {
     font-size: 0.9em;
