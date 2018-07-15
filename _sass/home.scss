@@ -1,0 +1,92 @@
+.page-header-text {
+  color: white;
+  padding: 15px 0;
+  font-size: 1.4em;
+}
+
+h1.page-header-text {
+  font-size: 3.5em;
+  @media #{$medium-and-down} {
+    font-size: 2em;
+    margin-top: 0;
+    display: table-row;
+    text-align: center;
+  }
+}
+
+.highlight-image {
+  max-width: 30%;
+}
+
+.partners {
+  .tile-link {
+    max-width: 300px;
+    height: 200px;
+    white-space: nowrap;
+    color: transparent;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -0.25em;
+    }
+
+    img {
+      vertical-align: middle;
+      max-width: 200px;
+      height: auto;
+      margin: 0;
+    }
+  }
+}
+
+
+#sponsor-logos img {
+  padding: 1.3em;
+}
+
+#sponsor-logos a:hover {
+  text-decoration: none;
+}
+.highlights-list {
+  padding: 30px 0;
+  color: $gray;
+  font-size: 1em;
+  line-height: 1.8em;
+
+  p {
+    @media #{$medium-and-down} {
+      font-size: 0.75em;
+    }
+  }
+
+  > div:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  p {
+    margin: 0;
+    vertical-align: middle;
+
+    * {
+      vertical-align: inherit;
+    }
+  }
+  .img-wrapper {
+    width: 32px;
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  strong {
+    color: $blue;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+}
+
+.bordered-img {
+  border: 2px solid #e5e5e5;
+}

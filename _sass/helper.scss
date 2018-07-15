@@ -1,0 +1,27 @@
+.bg-color-primary {
+  background-color: $blue;
+}
+
+.bg-color-primary-light {
+  background-color: lighten($blue, 10);
+}
+
+.bg-color-primary-dark {
+  background-color: darken($blue, 10);
+}
+
+.bg-img-primary {
+  background: url($background-image) repeat top;
+}
+
+.bg-color-secondary {
+  background-color: $red;
+}
+
+.color-secondary {
+  color: $red;
+}
+
+.bg-color-tercial {
+  background-color: #f3a321;
+}

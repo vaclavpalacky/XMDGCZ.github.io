@@ -1,0 +1,108 @@
+strong, b {
+  font-weight: 700;
+  color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  -webkit-font-smoothing: antialiased
+}
+
+h1, h2, h3 {
+  color: $red;
+}
+
+h1, h2, h3, h4 {
+  font-family: $OpenSans;
+  font-weight: 300 !important;
+}
+
+h3 {
+  margin-top: 1.3em;
+  font-size: 1.25em;
+}
+
+h1 {
+  font-size: 3.5em;
+  line-height: 1.5em;
+  padding: 1em 0;
+}
+
+h2 {
+  margin: 0.8em 0;
+  font-size: 2.5em;
+  line-height: 1.1em;
+  padding: 0;
+}
+
+h2 small {
+  color: inherit;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 15px 0;
+  @extend .flow-text;
+}
+
+ul, ol {
+  padding-left: 1.1em;
+}
+
+ul li, ol li {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5em;
+}
+
+ol {
+  counter-reset: awesome-counter;
+  margin: 15px 0;
+  padding-left: 0;
+
+  li {
+    list-style-type: none;
+    padding-left: 45px;
+    position: relative;
+    line-height: 2em;
+
+    &:before {
+      content: counter(awesome-counter) ".";
+      counter-increment: awesome-counter;
+      color: $blue;
+      font-size: 1.8em;
+      position: absolute;
+      left: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+ul.manual-list, ol.manual-list {
+  margin-left: -0.8em;
+  -webkit-margin-before: 1.1em;
+  -webkit-margin-after: 1.1em;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 22px;
+
+  li {
+    padding-left: 0;
+
+    &:before {
+      content: none;
+    }
+  }
+}
+
+a:hover, a:focus, a:active, a.active {
+  color: darken($blue, 10);
+  text-decoration: underline;
+}
+
+a {
+  color: $blue;
+}
+

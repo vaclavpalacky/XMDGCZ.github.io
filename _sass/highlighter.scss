@@ -1,0 +1,46 @@
+.highlighter-rouge {
+  padding: 10px 0;
+  @media #{$small-and-down} {
+    margin: 0 -12.5%;
+  }
+}
+
+div .highlight {
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+
+  pre {
+    font-size: 0.9em;
+    line-height: 1.7;
+    font-family: "Open Sans", sans-serif;
+    @media #{$medium-and-down} {
+      font-size: 0.8em;
+      line-height: 1.3;
+    }
+  }
+
+  td, th {
+    padding: 5px;
+  }
+
+  .rouge-code {
+    padding-left: 10px;
+  }
+}
+
+.rouge-gutter {
+  width: 15px;
+}
+
+pre.highlight {
+  overflow-x: auto;
+  margin: 0;
+}
+
+.lineno {
+  padding: 0 10px 0 10px;
+  margin: 0;
+  text-align: center;
+  border-radius: 6px;
+  border-right: 2px solid $blue;
+  color: grey;
+}
