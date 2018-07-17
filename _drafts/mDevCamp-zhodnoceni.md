@@ -2,6 +2,7 @@
 layout: post
 title: "Měsíc po mDevCamp 2018"
 author: "Vojtech Madr"
+
 ---
 
 Před měsícem se v praze odehrála největší mobilní událost roku v ČR. 
@@ -15,10 +16,12 @@ Multiplatformní technologie byly jednou s nejvíce probíraných témat. Na kon
 
 Co jsem tak procházel konferencí a bavil jsem s lidma, co používají vše (vyjma Xamarinu), slyšel jsem spíš skeptické reakce. 
 
+## Multiplatformní technologie
+
 ## Kam dál?
 
 P.S.:
 Pokud chcete o akci slyšet více, určitě si poslechněte 28. epizodu .NET.CZ podcastu! 
 
-Link zde : https://soundcloud.com/msimecek/dotnet-cz-episode-28?in=msimecek/sets/net-cz-podcast
+[https://soundcloud.com/msimecek/dotnet-cz-episode-28?in=msimecek/sets/net-cz-podcast](https://soundcloud.com/msimecek/dotnet-cz-episode-28?in=msimecek/sets/net-cz-podcast)
 
