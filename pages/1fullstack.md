@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Prague Fullstack Meetup
+title: Fullstack Meetup
 permalink: fullstack-meetup.html
 ---
 
