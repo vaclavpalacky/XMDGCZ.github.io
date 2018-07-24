@@ -24,8 +24,9 @@ kramdown:
       start_line: 1
 
 meetup:
+  group: "Meetup-API-Testing"
   events:
-    new_event_id: "251642408"
+    event_id: "229949779"
 t:
   en:
     months:
