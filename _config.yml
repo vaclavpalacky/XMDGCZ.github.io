@@ -23,6 +23,10 @@ kramdown:
       line_numbers: true
       start_line: 1
 
+meetup:
+  group: "xmdg-cz"
+  events:
+    event_id: ""
 t:
   en:
     months:

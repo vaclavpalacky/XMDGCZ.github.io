@@ -1,0 +1,25 @@
+.event-notification
+{
+  .card
+  {
+    padding: 15px 15px;
+    .card-image
+    {
+      padding-right: 10px;
+      color: $meetup-red;
+    }
+  }
+  .event-link
+  {
+    text-decoration: none;
+  }
+  i time
+  {
+    color: grey;
+  }
+  .event-name {
+    margin: 0;
+    font-size: 2em;
+    padding-bottom: 15px;
+  }
+}

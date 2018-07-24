@@ -1,0 +1,25 @@
+{% comment %}
+    Used for getting info about single event from Meetup API
+{% endcomment %}
+
+{% include  /API/Meetup/notification-view.html %}
+
+<script>
+    var jsonpCallback = function(data) {
+        console.log( data.data);
+        // link local_date local_time name venue.address_1 city
+    }
+
+    var url = "https://api.meetup.com/{{ site.meetup.group }}/events/{{ site.meetup.events.event_id }}";
+    var params = ["sign=true", "photo-host=public"];
+
+    var src = url;
+    src += "?" + params.join("&");
+
+    src += "&callback=jsonpCallback";
+
+    var scriptTag = document.createElement('SCRIPT');
+    scriptTag.src = src;
+
+    document.getElementsByTagName('HEAD')[0].appendChild(scriptTag);
+</script>
