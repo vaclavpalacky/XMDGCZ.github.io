@@ -1,6 +1,9 @@
 {% comment %}
     Used for getting info about single event from Meetup API
 {% endcomment %}
+
+{% include  /API/Meetup/notification-view.html %}
+
 <script>
     var jsonpCallback = function(data) {
         console.log( data.data);
