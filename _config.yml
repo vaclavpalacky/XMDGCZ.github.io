@@ -24,9 +24,9 @@ kramdown:
       start_line: 1
 
 meetup:
-  group: "Meetup-API-Testing"
+  group: "xmdg-cz"
   events:
-    event_id: "229949779"
+    event_id: ""
 t:
   en:
     months:
