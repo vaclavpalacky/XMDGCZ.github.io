@@ -10,27 +10,20 @@
         if(response.data.length > 0) {
             var response_data = response.data[0];
 
-            var name_html = document.getElementById("event-name");
-            var date_html = document.getElementById("event-date");
-            var time_html = document.getElementById("event-time");
-            var location_html = document.getElementById("event-location");
-            var link_html = document.getElementById("event-link");
 
             link_html.href = response_data.link;
             name_html.innerText = response_data.name;
             date_html.innerText = response_data.local_date;
             time_html.innerText = response_data.local_time;
 
-            // TODO add when event will have location
-           /* if (response_data.visibility == "public") {
-                location_html.innerText = response_data.venue.address_1 + " " + response_data.city;
-            }*/
+            if (response_data.venue != undefined) {
+                location_html.innerText = response_data.venue.address_1;
+                addins_html.classList.remove('hide');
+            }
 
             // Show html
-            document.getElementById("event-notification").classList.remove('hide');
+            container_html.classList.remove('hide');
         }
-
-        // link local_date local_time name venue.address_1 city
     }
     var url = "https://api.meetup.com/{{ site.meetup.group }}/events/";
     var params = ["status=upcoming", "sign=true"];
