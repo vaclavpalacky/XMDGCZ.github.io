@@ -12,7 +12,10 @@
 
             link_html.href = response_data.link;
             name_html.innerText = response_data.name;
-            date_html.innerText = response_data.local_date;
+
+            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            date_html.innerText = new Date(response_data.local_date).toLocaleDateString( {{ page.lang | jsonify }}  , options );
+
             time_html.innerText = response_data.local_time;
 
             if (response_data.venue != undefined) {

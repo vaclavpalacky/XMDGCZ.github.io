@@ -26,7 +26,7 @@ kramdown:
 meetup:
   group: "xmdg-cz"
   events:
-    event_id: "251642408"
+    event_id: "" #Meetup event ID
 t:
   en:
     months:
@@ -42,7 +42,7 @@ t:
       october: "Oct"
       november: "Nov"
       december : "Dec"
-  cz:
+  cs:
     months:
       january: "ledna"
       february: "února"
@@ -62,4 +62,8 @@ defaults:
     scope:
       type: "posts"
     values:
-      lang: "cz"
+      lang: "cs"
+    scope:
+      type: "pages"
+    values:
+      lang: "cs"
