@@ -11,7 +11,7 @@ Před dvěma roky jsme založili naší komunitu a stále existujeme a posouvám
 
 Splnil se nám cíl dostat do České Republiky [**Jamese Montemagna**](https://montemagno.com) a navázali jsme vztahy s Čechy v Xamarinu **(Marek Šafář, Vašek Vančura atd.)**. Jeden z našich organizátorů vlastní titul **Microsoft MVP**. Díky Nám se stal Xamarin tématem na největších českých .NET vývojářských akcích *(TechEd, ShowIT)!*  V neposlední řadě účíme a mentorujeme záky **Střední průmyslové školy na Proseku**!
 
-![James Montemagno (mDevCamp)](james.png)
+![James Montemagno (mDevCamp)](james-montemagno.png)
 
 
 A tím určitě nekončíme. Máme v plánu dále rozširovat obecné povědomí o naší oblíbené technologii. Jak na našem [**facebooku**](https://www.facebook.com/xmdgcz/) i [**twitteru**](https://twitter.com/xmdg_cz) a nově i na tomto našem blogu. Dále plánujeme pořádání nových *Xamarin Beer*, v rámci naší komunity budeme spolupracovat s novým *FullStackMeetupem*. 

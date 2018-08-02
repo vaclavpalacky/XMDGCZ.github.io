@@ -57,7 +57,7 @@ t:
       november: "listopadu"
       december : "prosince"
 
-gems:
+plugins:
   - jekyll-postfiles
 
 defaults:
