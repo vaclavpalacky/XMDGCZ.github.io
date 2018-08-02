@@ -1,4 +1,4 @@
-# XMDG.cz - Oficiální web Xamarin Developers Group Czech
+# [XMDG.cz](http://xmdg.cz) - Oficiální web Xamarin Developers Group Czech
 
 ## Kdo jsme?
 
@@ -25,4 +25,5 @@ Copyright © 2018 XMDG.cz. Powered by <a href="http://jekyllrb.com">Jekyll</a>
 
 [1]: https://jekyllrb.com/docs/installation/
 [2]: https://opensource.org/licenses/MIT
-[3]:https://pages.github.com
+[3]: https://pages.github.com
+[3]: http://xmdg.cz
