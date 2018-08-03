@@ -3,6 +3,7 @@ author: David Malý
 email: info@xmdg.cz
 description: >
   Oficiální stránky Xamarin Developers Group Czech komunity
+permalink: /:year/:month/:day/:title/
 
 sass:
     style: compressed
@@ -57,13 +58,11 @@ t:
       november: "listopadu"
       december : "prosince"
 
-plugins:
-  - jekyll-postfiles
 
 defaults:
   -
     scope:
-      type: "posts"
+      type: "_posts"
     values:
       lang: "cs"
     scope:
