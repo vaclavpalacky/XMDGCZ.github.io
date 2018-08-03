@@ -1,9 +1,6 @@
-{% assign category = include.category %}
-{% assign lang = include.lang %}
-{% assign posts_lang = site.categories[category] | where:"lang", lang %}
 {% assign max_posts = include.max | posts_lang.size %}
+{% for post in site.posts limit:max_posts %}
 <ul class="post-list">
-    {% for post in site.posts limit:max_posts %}
       <li>
           {% comment %}
             {% if site.show_post_image_posts_list %}
