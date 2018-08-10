@@ -62,9 +62,10 @@ t:
 defaults:
   -
     scope:
-      type: "_posts"
+      type: "posts"
     values:
       lang: "cs"
+  -
     scope:
       type: "pages"
     values:
