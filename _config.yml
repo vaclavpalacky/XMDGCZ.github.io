@@ -73,8 +73,16 @@ defaults:
       type: "authors"
     values:
       layout: author
+  - scope:
+      path: ""
+      type: "custom-categories"
+    values:
+      layout: list-posts
 
 collections:
   authors:
       output: true
       permalink: /:name
+  custom-categories:
+        output: true
+        permalink: /:name

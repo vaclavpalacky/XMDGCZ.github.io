@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Vítejte na našem novém blogu a oslavte s námi dva roky naší komunity!" 
+categories:
+            - "Komunita"
 ---
 
 ## Děkujeme Vám za Vaší podporu! 

@@ -1,0 +1,23 @@
+
+
+<ul class="list-horizontal">
+    <li>
+       <a href="/blog"
+          {% if page.title == "Blog" %}
+                class="category-highlighted"
+        {% endif %}
+        > Vše </a>
+    </li>
+
+    {% for category in site.custom-categories %}
+        <li>
+            <a href="{{ category.url}}"
+               {% if category.name == page.name %}
+                    class="category-highlighted"
+               {% endif %}
+            >
+                {{ category.name }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
