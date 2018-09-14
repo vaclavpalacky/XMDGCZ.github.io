@@ -10,7 +10,8 @@
                 {% for path in page_paths %}
                     {% assign my_page = site.pages | where: "path", path | first %}
                     {% if my_page.title %}
-                        <li><a href="{{ my_page.url | relative_url  | replace : '.html', ''}}" class="{% if page.url contains /my_page.url/ %} active {% endif %} flow-text">
+                        <li><a href="{{ my_page.url | relative_url  | replace : '.html', ''}}" class="{% if page.url contains /my_page.url/
+                          or page.menuHighlight == my_page.title %} active {% endif %} flow-text">
                             {{ my_page.title | escape }}
                         </a></li>
                     {% endif %}
@@ -41,7 +42,8 @@
                 {% for path in page_paths %}
                     {% assign my_page = site.pages | where: "path", path | first %}
                     {% if my_page.title %}
-                        <li><a href="{{ my_page.url | relative_url  | replace : '.html', ''}}" class="{% if page.url contains /my_page.url/ %} active {% endif %}">{{ my_page.title | escape }}</a></li>
+                        <li><a href="{{ my_page.url | relative_url  | replace : '.html', ''}}" class="{% if page.url contains /my_page.url/
+                       or page.menuHighlight == my_page.title  %} active {% endif %}">{{ my_page.title | escape }}</a></li>
                     {% endif %}
                 {% endfor %}
             {% endif %}              

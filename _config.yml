@@ -64,6 +64,7 @@ defaults:
       type: "posts"
     values:
       lang: "cs"
+      menuHighlight: "Blog" # which item should be highlighted in navigation bar
   - scope:
       type: "pages"
     values:
@@ -78,6 +79,7 @@ defaults:
       type: "custom-categories"
     values:
       layout: list-posts
+      menuHighlight: "Blog" # which item should be highlighted in navigation bar
 
 collections:
   authors:
