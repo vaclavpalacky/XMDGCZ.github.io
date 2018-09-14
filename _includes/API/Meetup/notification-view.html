@@ -1,0 +1,43 @@
+<div class="container hide event-notification section" id="event-notification">
+    <div class="row">
+        <h2> Nejbližší akce</h2>
+        <a class="event-link" id="event-link">
+            <div class="col s12">
+                <div class="card horizontal hoverable">
+                    <div class="card-image hide-on-small-and-down">
+                        <i class="fab fa-meetup fa-10x" ></i>
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content left-align">
+                            <div class="row ">
+                                <h2 class="event-name" id="event-name"></h2>
+                                <span class="col s12">
+                                    <i class="far fa-calendar-alt" ></i>
+                                    <time id="event-date"></time>
+                                </span>
+                                <span class="col s12">
+                                    <i class="far fa-clock" ></i>
+                                    <time id="event-time"></time>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-action hide" id="event-addins">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <time id="event-location"></time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<script>
+    var container_html = document.getElementById("event-notification");
+    var name_html = document.getElementById("event-name");
+    var date_html = document.getElementById("event-date");
+    var time_html = document.getElementById("event-time");
+    var location_html = document.getElementById("event-location");
+    var link_html = document.getElementById("event-link");
+    var addins_html = document.getElementById("event-addins");
+</script>

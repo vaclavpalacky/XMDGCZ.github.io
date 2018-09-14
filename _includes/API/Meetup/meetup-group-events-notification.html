@@ -1,0 +1,42 @@
+{% comment %}
+    Used for getting info about group events from Meetup API
+{% endcomment %}
+
+{% include  /API/Meetup/notification-view.html %}
+
+<script>
+    var jsonpCallback = function(response) {
+        console.log( response.data);
+        if(response.data.length > 0) {
+            var response_data = response.data[0];
+
+            link_html.href = response_data.link;
+            name_html.innerText = response_data.name;
+
+            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            date_html.innerText = new Date(response_data.local_date).toLocaleDateString( {{ page.lang | jsonify }}  , options );
+
+            time_html.innerText = response_data.local_time;
+
+            if (response_data.venue != undefined) {
+                location_html.innerText = response_data.venue.address_1;
+                addins_html.classList.remove('hide');
+            }
+
+            // Show html
+            container_html.classList.remove('hide');
+        }
+    }
+    var url = "https://api.meetup.com/{{ site.meetup.group }}/events/";
+    var params = ["status=upcoming", "sign=true"];
+
+    var src = url;
+    src += "?" + params.join("&");
+
+    src += "&callback=jsonpCallback";
+
+    var scriptTag = document.createElement('SCRIPT');
+    scriptTag.src = src;
+
+    document.getElementsByTagName('HEAD')[0].appendChild(scriptTag);
+</script>

@@ -3,6 +3,7 @@ author: David Malý
 email: info@xmdg.cz
 description: >
   Oficiální stránky Xamarin Developers Group Czech komunity
+permalink: /:year/:month/:day/:title/
 
 sass:
     style: compressed
@@ -23,6 +24,10 @@ kramdown:
       line_numbers: true
       start_line: 1
 
+meetup:
+  group: "xmdg-cz"
+  events:
+    event_id: "" #Meetup event ID
 t:
   en:
     months:
@@ -38,7 +43,7 @@ t:
       october: "Oct"
       november: "Nov"
       december : "Dec"
-  cz:
+  cs:
     months:
       january: "ledna"
       february: "února"
@@ -53,9 +58,15 @@ t:
       november: "listopadu"
       december : "prosince"
 
+
 defaults:
   -
     scope:
       type: "posts"
     values:
-      lang: "cz"
+      lang: "cs"
+  -
+    scope:
+      type: "pages"
+    values:
+      lang: "cs"
