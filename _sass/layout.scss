@@ -67,3 +67,13 @@ footer {
 * img {
   max-width: 100%;
 }
+
+.list-horizontal
+{
+  text-align: center;
+  margin: 10px;
+  li
+  {
+    display: inline;
+  }
+}

@@ -60,13 +60,21 @@ t:
 
 
 defaults:
-  -
-    scope:
+  - scope:
       type: "posts"
     values:
       lang: "cs"
-  -
-    scope:
+  - scope:
       type: "pages"
     values:
       lang: "cs"
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: author
+
+collections:
+  authors:
+      output: true
+      permalink: /:name
