@@ -3,26 +3,27 @@ layout: default
 ---
 <div class="container">
     <div class="section">
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-        <span class="blog-post-meta-list post-meta-list">
-            {% include post-meta-info.html post_date=page.date post_url=page.url post_lang=page.lang %}
-          {% if page.author %}
-            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-          {% endif %}
-        </span>
-      </header>
+            <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+            <span class="blog-post-meta-list post-meta-list">
+                {% include post-meta-info.html post_date=page.date post_url=page.url post_lang=page.lang %}
+            </span>
+            </header>
 
-      <div class="post-content" itemprop="articleBody">
-        {{ content }}
-      </div>
+            <div class="post-content" itemprop="articleBody">
+                {{ content }}
+            </div>
 
-      {% if site.disqus.shortname %}
-        {% include disqus_comments.html %}
-      {% endif %}
-    </article>
+
+        </article>
     </div>
+    <div class="section">
+        {% include author-bio.html %}
+    </div>
+    {% if site.disqus.shortname %}
+        {% include disqus_comments.html %}
+    {% endif %}
 </div>
 <script>$('.carousel.carousel-slider').carousel({fullWidth: true});</script>

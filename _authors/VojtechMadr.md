@@ -1,7 +1,7 @@
 ---
 title: Vojtěch Mádr
 position: Developer
-image_location: vojtechmadr.jpg
+image-location: vojtechmadr.jpg
 titles: 
         - "Senior Developer"
         - "Zakladatel XMDG.CZ"

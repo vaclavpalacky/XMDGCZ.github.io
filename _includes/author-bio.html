@@ -1,0 +1,19 @@
+
+{% for author in site.authors %}
+    {% if author.title contains page.author %}
+        <div class="section author-bio">
+            <div class="row">
+                <div class="col s12 l5 hidden-xs img-container">
+                    <img src="/assets/images/authors/{{author.image-location}}" alt="{{author.title}}" class="image-author">
+                </div>
+                <div class="col s12 l7">
+                    <h2 class="color-secondary">
+                        {{ author.title}}
+                    </h2>
+                    {{ author.content }}
+                </div>
+            </div>
+        </div>
+        {% break %}
+    {% endif %}}
+{% endfor %}
