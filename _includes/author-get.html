@@ -1,0 +1,16 @@
+{% assign author_name = empty %}
+
+{% if author_name == empty %}
+    {% assign author_name = page.author %}
+{% else if include.author_name %}
+    {% assign author_name = include.author_name %}
+{% endif %}
+
+
+{% assign author = empty %}
+{% for _author in site.authors %}
+    {% if _author.title contains author_name %}
+        {% assign author = _author %}
+    {% break %}
+    {% endif %}
+{% endfor %}
