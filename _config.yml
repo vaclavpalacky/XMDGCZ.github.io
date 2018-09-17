@@ -73,7 +73,9 @@ defaults:
       path: ""
       type: "authors"
     values:
+      type: "posts"
       layout: author
+      excerpt_separator: <!--excerpt-->
   - scope:
       path: ""
       type: "custom-categories"
