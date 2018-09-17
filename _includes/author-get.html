@@ -1,9 +1,9 @@
 {% assign author_name = empty %}
 
-{% if author_name == empty %}
-    {% assign author_name = page.author %}
-{% else if include.author_name %}
+{% if include.author_name %}
     {% assign author_name = include.author_name %}
+{% else %}
+    {% assign author_name = page.author %}
 {% endif %}
 
 
@@ -14,3 +14,5 @@
     {% break %}
     {% endif %}
 {% endfor %}
+
+
