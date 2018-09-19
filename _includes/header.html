@@ -46,8 +46,10 @@
                        or page.menuHighlight == my_page.title  %} active {% endif %}">{{ my_page.title | escape }}</a></li>
                     {% endif %}
                 {% endfor %}
-            {% endif %}              
+            {% endif %}
+              <li>
+                  <a href="/feed.xml"> <i class="fa fa-rss rss" ></i> </a>
+              </li>
           </ul>
-
     </div>
 </nav>

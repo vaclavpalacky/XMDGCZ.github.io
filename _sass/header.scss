@@ -1,5 +1,4 @@
-.home-header
-{
+.home-header {
   @media #{$medium-and-down} {
     padding-top: 52px;
   }
@@ -7,14 +6,13 @@
 
 .header-logo {
   vertical-align: center;
-  &:hover
-  {
+  &:hover {
     color: white;
     text-decoration: none;
   }
 }
 
-.navigation a:hover i{
+.navigation a:hover i {
   color: white;
 
 }
@@ -36,14 +34,11 @@
   white-space: nowrap;
 }
 
-
-
 .side-nav {
   padding: 15px;
   background: url($background-image) repeat;
 
-  li > a
-  {
+  li > a {
     color: white;
     font-size: 1.2rem; // from .flow-text
   }
@@ -66,6 +61,11 @@ nav {
 
     @media #{$small-and-down} {
       width: 95%;
+    }
+    .rss {
+      font-size: 17px;
+      height: 1.5em;
+      line-height: 1.5em;
     }
 
   }
@@ -93,7 +93,7 @@ nav {
   .menu-button {
     margin: 0;
     max-width: 100%;
-     i, .menu-title {
+    i, .menu-title {
       line-height: $menu-height;
       height: $menu-height;
     }
@@ -105,7 +105,6 @@ nav a.active, nav ul a:focus, nav ul a:active, nav ul a:hover {
   text-decoration: none;
   border-bottom: 4px solid #B9D9F3;
 }
-
 
 header a:hover {
   text-decoration: none;
