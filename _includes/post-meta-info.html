@@ -1,5 +1,9 @@
+{% include author-get.html author_name = post.author %}
 <div>
   <span>
+    {% if author %}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="{{ author.url }}" >{{ author.title }}</a></span> •
+    {% endif %}
     <i class="far fa-calendar-alt"></i>
     <time datetime="{{ include.post_date | date_to_xmlschema }}" itemprop="datePublished">
       {{ include.post_date | date: " %-d. "}}

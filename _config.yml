@@ -1,4 +1,6 @@
+name: Xamarin Developers Group Czech Blog
 title: XMDG Czech
+url: http:/xmdg.cz
 author: David Malý
 email: info@xmdg.cz
 description: >
@@ -60,13 +62,33 @@ t:
 
 
 defaults:
-  -
-    scope:
+  - scope:
       type: "posts"
     values:
       lang: "cs"
-  -
-    scope:
+      menuHighlight: "Blog" # which item should be highlighted in navigation bar
+  - scope:
       type: "pages"
     values:
       lang: "cs"
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      type: "posts"
+      layout: author
+      excerpt_separator: <!--excerpt-->
+  - scope:
+      path: ""
+      type: "custom-categories"
+    values:
+      layout: list-posts
+      menuHighlight: "Blog" # which item should be highlighted in navigation bar
+
+collections:
+  authors:
+      output: true
+      permalink: /:name
+  custom-categories:
+        output: true
+        permalink: /:name

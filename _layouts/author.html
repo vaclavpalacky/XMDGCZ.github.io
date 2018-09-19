@@ -1,0 +1,33 @@
+---
+layout: default
+---
+{% assign content_array = page.content | split: page.excerpt_separator %}
+{% assign excerpt_only = content_array | first %}
+{% assign content_remainder = content_array | last %}
+
+
+<div class="section first-section bg-img-primary">
+    <div class="home-header container">
+        <h1 class="page-header-text">{{ page.title }}</h1>
+        <p class="page-header-text">{{ page.titles | join: ", " }}</p>
+    </div>
+</div>
+
+{{ site.excerpt_separator }}
+
+
+<div class="container section author">
+    <div class="row">
+        <div class="col s12 l5 hidden-xs img-container">
+            <img src="assets/images/authors/{{page.image-location}}" alt="{{page.title}}" class="image-author">
+        </div>
+        <div class="col s12 l7">
+            {{ page.excerpt }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col 12 author-content">
+            {{ content_remainder | remove_first: '</p>'}}
+        </div>
+    </div>
+</div>

@@ -106,3 +106,14 @@ a {
   color: $blue;
 }
 
+.category-highlighted
+{
+  color: $red;
+  font-size: 19px;
+  border-bottom: 2px solid red;
+  &:hover
+  {
+    color: $red;
+    text-decoration: none;
+    }
+}

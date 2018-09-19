@@ -67,3 +67,22 @@ footer {
 * img {
   max-width: 100%;
 }
+
+.image-author
+{
+  @media #{$medium-and-down} {
+    max-width: 50%;
+  }
+}
+.list-horizontal
+{
+  text-align: center;
+  margin: 10px;
+  li{
+    display: inline;
+  }
+  li + li:before{
+    content: "|";
+    color: $blue;
+  }
+}
