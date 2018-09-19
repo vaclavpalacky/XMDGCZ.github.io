@@ -6,10 +6,16 @@
 
 .author-bio {
   max-height: 450px;
-  overflow: hidden;
 }
 
 .author-name
 {
   font-size: 2.5em;
+}
+
+.image-author
+{
+  @media #{$medium-and-down} {
+    max-width: 40%;
+  }
 }
