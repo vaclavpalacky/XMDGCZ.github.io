@@ -9,6 +9,35 @@ body {
   width: 80%;
 }
 
+.u-flex {
+  &.--img {
+    img {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media #{$medium-and-up} {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    &.--img {
+      img {
+        margin-bottom: 0;
+        margin-right: 40px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
 
 .section {
   padding-top: 4em;
