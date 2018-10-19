@@ -12,3 +12,16 @@
     }
   }
 }
+.speaker-image
+{
+  height: 190px;
+}
+
+.registration-container
+{
+  @extend .center;
+  p
+  {
+    padding-top: 15px;
+  }
+}
