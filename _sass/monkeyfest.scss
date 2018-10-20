@@ -1,0 +1,27 @@
+.m-map {
+  p {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .hidden-xs {
+    @media #{$medium-and-down} {
+      display: none;
+    }
+  }
+}
+.speaker-image
+{
+  height: 190px;
+}
+
+.registration-container
+{
+  @extend .center;
+  p
+  {
+    padding-top: 15px;
+  }
+}

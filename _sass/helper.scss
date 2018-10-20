@@ -14,6 +14,11 @@
   background: url($background-image) repeat top;
 }
 
+.bg-img-monkeyfest {
+  background: url($monkeyfest-visual) repeat top;
+  background-size: cover;
+}
+
 .bg-color-secondary {
   background-color: $red;
 }

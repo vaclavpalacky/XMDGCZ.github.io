@@ -80,6 +80,20 @@ ol {
   }
 }
 
+ul.list {
+  margin: 20px 0;
+  @extend .flow-text;
+
+  li {
+    line-height: 38px;
+    &:before {
+      margin-right: 15px;
+      content: '–';
+      color: $blue;
+    }
+  }
+}
+
 ul.manual-list, ol.manual-list {
   margin-left: -0.8em;
   -webkit-margin-before: 1.1em;
@@ -104,6 +118,18 @@ a:hover, a:focus, a:active, a.active {
 
 a {
   color: $blue;
+
+  .more {
+    margin-left: 15px;
+    transition: transform 300ms;
+  }
+
+  &:hover {
+    .more {
+      margin-left: 15px;
+      transform: translateX(-5px);
+    }
+  }
 }
 
 .category-highlighted
