@@ -21,7 +21,7 @@ Piště issues a přidávejte pull requesty!
 
 The theme is available as open source under the terms of the [MIT License][2].
 
-Copyright © 2018 XMDG.cz. Powered by <a href="http://jekyllrb.com">Jekyll</a>
+Copyright © 2018 XMDG.cz. Powered by <a href="http://jekyllrb.com">Jekyll</a>.
 
 [1]: https://jekyllrb.com/docs/installation/
 [2]: https://opensource.org/licenses/MIT
